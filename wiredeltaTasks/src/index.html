@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WireDelta</title>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- font integration -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+    <!-- toolbar icon -->
+    <link rel="shortcut icon" href="img/toolbar_icon.ico" />
+    <!-- font awesome icons -->
+    <script src="https://use.fontawesome.com/33c8c94010.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/wd_logo.jpg" alt="wd-logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#taskOne">Task1</a></li>
+                  <li><a href="#taskTwo">Task2</a></li>
+                  <li><a href="#taskThree">Task3</a></li>
+                  <li><a href="#taskFour">Task4</a></li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="taskOne" id="taskOne">
+        <h1>Task One</h1>
+        <p>Age calculator</p>
+        <div class="col-md-12">
+          <input type="text" name="ageInput" placeholder="Input Your Birth Year" id="taskOneAgeInput">
+        </div>
+        <div class="col-md-12">
+          <button type="button" id="taskOneButton">Calculate</button>
+        </div>
+        <label id="taskOneAgeResultLabel"></label>
+      </div>
+
+      <hr>
+
+      <div class="taskTwo" id="taskTwo">
+        <h1>Lifetime Supply Calculator</h1>
+        <p>Calculates the lifetime supply of your favorite snack</p>
+        <div class="col-md-6">
+          <input type="text" id="taskTwoAgeInput" placeholder="Input Your Age">
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="taskTwoSnackInput" placeholder="Snacks Per Day">
+        </div>
+        <button type="button" id="taskTwoButton">Calculate</button>
+        <br>
+        <label id="lifetimeResultLabel"></label>
+      </div>
+
+      <hr>
+
+      <div class="taskThree" id="taskThree">
+        <h1>Math Section</h1>
+        <p>Calculate Circumfrence And An Area Of A Circle</p>
+        <div class="col-md-12">
+          <input type="text" id="taskThreeCircumfrenceInput" placeholder="Input Radius">
+          <button type="button" id="taskthreeCircumfrenceButton">Calculate Circumfrence</button>
+        </div>
+
+        <div class="col-md-12">
+          <input type="text" id="taskThreeAreaInput" placeholder="Input Radius">
+          <button type="button" id="taskthreeAreaButton">Calculate Area</button>
+        </div>
+
+        <label id="taskThreeResultLabel"></label>
+      </div>
+
+      <hr>
+
+      <div class="taskFour" id="taskFour">
+        <h1>Temperature Converter</h1>
+        <p>Convert celsius to fahrenheit and vice versa</p>
+
+        <div class="col-md-12">
+          <input type="text" id="taskFourCelsiusInput" placeholder="Input Celsius Value">
+          <button type="button" id="taskFourCelsiusButton">Calculate</button>
+          <br>
+          <label id="taskFourCelsiusResultLabel"></label>
+        </div>
+
+        <div class="col-md-12">
+          <input type="text" id="taskFourFahrenheitinput" placeholder="Input Fahrenheit Value">
+          <button type="button" id="taskFourFahrenheitButton">Calculate</button>
+          <br>
+          <label id="taskFourFahrenheitResultLabel"></label>
+        </div>
+      </div>
+
+      <a id="upArrow" href="#taskOne"><i class="fa fa-arrow-up fa-4x" aria-hidden="true"></i></a>
+      <br>
+      
+      <div class="footer">
+        <label>Made by Filip Malek on 28th of April for Wiredelta</label>
+        <label> Copyright (c) 2017 Copyright Holder All Rights Reserved.</label>
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/taskOne.js"></script>
+  </body>
+</html>

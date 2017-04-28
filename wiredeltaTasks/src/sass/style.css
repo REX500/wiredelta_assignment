@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: linear-gradient(to bottom, #141E30, #243B55); }
+
+.navbar {
+  color: gray;
+  opacity: 0.9;
+  height: 68px; }
+  .navbar a {
+    font-size: 20px;
+    color: black;
+    font-family: 'Lato', sans-serif; }
+  .navbar ul {
+    padding-top: 7px; }
+    .navbar ul li {
+      transition: transform .2s; }
+      .navbar ul li:hover {
+        transform: scale(1.2); }
+
+.container {
+  padding: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center; }
+  .container h1, .container p, .container label {
+    font-family: 'Lato', sans-serif;
+    color: white; }
+  .container h1 {
+    font-size: 60px; }
+  .container p {
+    font-size: 30px; }
+  .container hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+  .container .taskOne, .container .taskTwo, .container .taskThree, .container .taskFour {
+    padding: 50px; }
+  .container button {
+    background-color: white;
+    font-size: 16px;
+    padding: 18px 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    transition: color .7s; }
+    .container button:hover {
+      background-color: gray;
+      color: white; }
+  .container #taskOne, .container #taskTwo, .container #taskThree, .container #taskFour {
+    text-align: center; }
+  .container input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; }
+  .container #upArrow i {
+    color: white;
+    opacity: 0.9;
+    transition: transform 0.4s; }
+    .container #upArrow i:hover {
+      transform: scale(1.2); }
+
+/*# sourceMappingURL=style.css.map */

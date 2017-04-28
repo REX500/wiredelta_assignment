@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to bottom, #141E30, #243B55);
+}
+
+.navbar{
+  color: gray;
+  opacity: 0.9;
+  height: 68px;
+  a{
+    font-size: 20px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+  }
+  ul{
+    padding-top: 7px;
+    li{
+      transition: transform .2s;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.container{
+  padding: 100px;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+
+   h1,p,label{
+     font-family: 'Lato', sans-serif;
+     color: white;
+   }
+
+   h1{
+     font-size: 60px;
+   }
+   p{
+     font-size: 30px;
+   }
+
+   hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+
+  .taskOne, .taskTwo, .taskThree, .taskFour{
+    padding: 50px;
+  }
+
+  button{
+    background-color: white;
+    font-size: 16px;
+    padding: 18px 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    transition: color .7s;
+
+    &:hover{
+      background-color: gray;
+      color: white;
+    }
+  }
+  #taskOne, #taskTwo, #taskThree, #taskFour{
+    text-align: center;
+  }
+  input[type=text] {
+    // width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  #upArrow i{
+    color: white;
+    opacity: 0.9;
+    transition: transform 0.4s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+}
